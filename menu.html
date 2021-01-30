@@ -1,759 +1,1040 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>おだし八景 Odashi Hakkei</title>
-    <link rel="shortcut icon" href="img/フリーアイコン/rabbit.png" type="image/x-icon">
-    <link rel="stylesheet" href="reset_CSS.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="xs.css" media="screen and (max-width:767px)">
-    <link rel="stylesheet" href="sm.css" media="screen and (min-width:768px)">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odashi Hakkei</title>
+  <link rel="shortcut icon" href="/img/フリーアイコン/rabbit.png" type="image/x-icon">
+  <link rel="stylesheet" href="/css/reset_CSS.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
+
 <body>
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                        <a class="navbar-brand" href="#">Japanese Restaurant</a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                          <div class="navbar-nav ml-auto home_btn">
-                            <a class="nav-item nav-link active " href="top.html">Home <span class="sr-only">(current)</span></a>
-                            <a class="nav-item nav-link" href="#">Features</a>
-                            
-                            
-                          </div>
-                        </div>
-                    </nav>
-                    <nav class="navbar navbar-expand-lg navbar-light navbarColor" style="background-color: rgba(27, 71, 60, 0.1);">
-                        <img class="rabbit_icon" src="img/フリーアイコン/rabbit.png" alt="">
-                        <a class="navbar-brand hakkei_title" href="#">おだし八景 Odashi Hakkei</a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav ml-auto">
-                                    <a class="nav-item nav-link active mr-4 btn btn-success text-white" href="#">Reservations<span class="sr-only">(current)</span></a>
-                                    <a class="nav-item nav-link" href="top.html">Home</a>
-                                    <a class="nav-item nav-link" href="#">About</a>
-                                    <a class="nav-item nav-link" href="menu.html">Menu</a>
-                                <a class="nav-item nav-link" href="blog.html">Blog</a>
-                                <a class="nav-item nav-link" href="#">News</a>
-                                <a class="nav-item nav-link" href="contact.html">Contact</a>
-                            </div>
-                        </div>
-                    
-                    </nav>
-                </div>
-            </div>
-        </div>  
-    </section>
+ 
+ <!-- ナビバー上段 -->
+ <section>
+   <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+       <nav class="navbar navbar-dark bg_darkgrey">
+         <span class="navbar-brand mb-0 h1">Japanese Restaurant</span>
+       </nav>
+      </div>
+    </div>
+  </div>
+
+ </section>
 
 
+
+
+<!-- ナビバー下段 -->
 <section>
-    <div class="container">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+       <nav class="navbar navbar-expand-lg navbar-light bg_green">
+         <a class="navbar-brand" href="#">
+           <img src="img/フリーアイコン/rabbit.png" width="30" height="30" class="d-inline-block align-top" alt="">
+           おだし八景 Odashi Hakkei
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+       
+         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+           <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
+             <li class="nav-item">
+               <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="/blog.html">Blog</a>
+             </li>
+             <li class="nav-item active">
+               <a class="nav-link" href="/menu.html">Menu</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="/contact.html">Contact</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#">Reservations</a>
+             </li>
+           </ul>
+           
+         </div>
+       </nav>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- パンくずリスト -->
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 menu">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Menu</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- メニュー一覧バー -->
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <nav class="navbar navbar-expand-lg menu_titlebar">
+            <!-- スマホ用ナブバー展開ボタン -->
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNavbar" aria-controls="menuNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuNavbar">
+                <ul class="navbar-nav nav-fill w-100 nav-justified" style="color: white;">
+                    <li class="nav-item"><a href="#single_menu" class="nav-link border-right">単品メニュー<br>Single Menus</a></li>
+                    <li class="nav-item"><a href="#course_menu" class="nav-link border-right">コースメニュー<br>Course Menus</a></li>
+                    <li class="nav-item"><a href="#oden_menu" class="nav-link">おでんメニュー<br>Oden Menus</a></li>
+                </ul>
+            </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- 単品メニュー -->
+<section>
+  <div class="container">
+    <div class="row heading" data-aos="flip-left">
+      <div class="col-md-12">
+        <div class="d-flex justify-content-between">
+          <h3 id="single_menu">単品メニュー<span class="english">(Single Menus)</span></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="menu">
       <div class="row">
-        <div class="col-md-12">
-          <div class="position_bar">
-              <ul class="d-flex m-0">
-                  <li class="top_link"><a href="top.html">Home</a></li>
-                  <li>Menu</li>
-              </ul>
-              <form class="form-inline">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form>
+        <div class="col-md-6" data-aos="zoom-in-up">
+          <div class="card menu_item radius" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180" src="img/nasu.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>茄子のおろし煮</title><rect width="100%" height="100%" fill="#868e96"/></img>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title menu_title"><span class="bg-light p-1 title_btn">茄子のおろし煮</span></h5>
+                  <p class="card-text english menu_padding">Stewed Eggplant</p>
+                  <p class="card-text text-white mb-1 pl-1"><span class="bg-danger p-1 price_btn">Price</span></p>
+                  <p class="card-text menu_padding">THB 200.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="zoom-in-up">
+          <div class="card menu_item radius" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180" src="img/sarada.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>八景サラダ</title><rect width="100%" height="100%" fill="#868e96"/></img>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title menu_title"><span class="bg-light p-1 title_btn">八景サラダ</span></h5>
+                  <p class="card-text english menu_padding">Hakkei Salada</p>
+                  <p class="card-text text-white mb-1 pl-1"><span class="bg-danger p-1 price_btn">Price</span></p>
+                  <p class="card-text menu_padding">THB 220.00</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-
-
-
-
-  <section>
-    <div class="container">
+  </div>
+  
+  
+  <div class="container">
+    <div class="menu">
       <div class="row">
-        <div class="col-md-12">
-            <div class="menu_bar d-flex">
-                <div class="single menu text-center col-4">
-                    <a href="menu.html#single_menu">
-                        <h3 class="m-0">単品メニュー</h3>
-                        <h3 class="m-0">Single Menu</h3>
-                    </a>
+        <div class="col-md-6" data-aos="zoom-in-up">
+          <div class="card menu_item radius" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180" src="img/sisoage.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>雲丹のしそ巻き天ぷら</title><rect width="100%" height="100%" fill="#868e96"/></img>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title menu_title"><span class="bg-light p-1 title_btn">雲丹のしそ巻き天ぷら</span></h5>
+                  <p class="card-text english menu_padding">Sea Urchin Tempura with Shiso</p>
+                  <p class="card-text text-white mb-1 pl-1"><span class="bg-danger p-1 price_btn">Price</span></p>
+                  <p class="card-text menu_padding">THB 720.00</p>
                 </div>
-                <div class="course menu text-center col-4">
-                    <a href="menu.html#course_menu">
-                        <h3 class="m-0">コースメニュー</h3>
-                        <h3 class="m-0">Course Menu</h3>
-                    </a>
-                </div>
-                <div class="oden_menu menu text-center col-4">
-                    <a href="menu.html#oden_menu">
-                        <h3 class="m-0">おでんメニュー</h3>
-                        <h3 class="m-0">Oden Menu</h3>
-                    </a>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
-       </div>
-    </div>
-  </section>
-  
-
-    <section>
-        <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="single_menu" id="single_menu">
-                    <div class="single_menu_heading d-flex" id="single_margin">
-                      <h3>単品メニュー</h3>
-                      <p class="lineheight pl-5">Single Menus</p>
-                    </div>
-
-                    <div class="single_menu_items d-flex flex-wrap">
-                      <div class="single_menu_item d-flex col-6 pl-0">
-                        
-                        <div class="single_menu_img">
-                          <img src="img/nasu.jpg" alt="">
-                        </div>
-
-                        <div class="single_menu_name">
-                          <div>
-                            <h4 class="m-0">茄子のおろし煮</h4>
-                            <p class="m-0">Stewed Eggplant</p>
-                            <h5 class="m-0">Price THB 200.00</h5>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="single_menu_item d-flex col-6 pl-0">
-                        <div class="single_menu_img">
-                          <img src="img/sarada.jpg" alt="">
-                        </div>
-
-                        <div class="single_menu_name">
-                          <div>
-                            <h4 class="m-0">八景サラダ</h4>
-                            <p class="m-0">Hakkei Salada with Goma Dressing</p>
-                            <h5 class="m-0">Price THB 220.00</h5>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="single_menu_item d-flex col-6 pl-0">
-                        <div class="single_menu_img">
-                          <img src="img/sisoage.jpg" alt="">
-                        </div>
-
-                        <div class="single_menu_name">
-                          <div>
-                            <h4 class="m-0">雲丹のしそ巻き天ぷら</h4>
-                            <p class="m-0">Sea Urchin Tempura with Shiso</p>
-                            <h5 class="m-0">Price THB 720.00</h5>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="single_menu_item d-flex col-6 pl-0">
-                        <div class="single_menu_img">
-                          <img src="img/egg.jpg" alt="">
-                        </div>
-
-                        <div class="single_menu_name">
-                          <div>
-                            <h4 class="m-0">だし巻き</h4>
-                            <p class="m-0">Japanese Dashi Omlet</p>
-                            <h5 class="m-0">Price THB 240.00</h5>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="single_menu_item d-flex col-6 pl-0">
-                        <div class="single_menu_img">
-                          <img src="img/tempura.jpg" alt="">
-                        </div>
-
-                        <div class="single_menu_name">
-                          <div>
-                            <h4 class="m-0">天ぷら6種盛り</h4>
-                            <p class="m-0">Assorted 6 Kinds of Tempura</p>
-                            <h5 class="m-0">Price THB 480.00</h5>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="single_menu_item d-flex col-6 pl-0">
-                        <div class="single_menu_img">
-                          <img src="img/karaage.jpg" alt="">
-                        </div>
-
-                        <div class="single_menu_name">
-                          <div>
-                            <h4 class="m-0">八景からあげ</h4>
-                            <p class="m-0">Japanese Fried Chicken</p>
-                            <h5 class="m-0">Price THB 240.00</h5>
-                          </div>
-                        </div>
-
-                        
-
-                      </div>
-                    </div>
-                    <div class="single_menu_items d-flex flex-wrap">
-                        <div class="single_menu_item d-flex col-6 pl-0">
-                          
-                          <div class="single_menu_img">
-                            <img src="img/nasu.jpg" alt="">
-                          </div>
-  
-                          <div class="single_menu_name">
-                            <div>
-                              <h4 class="m-0">茄子のおろし煮</h4>
-                              <p class="m-0">Stewed Eggplant</p>
-                              <h5 class="m-0">Price THB 200.00</h5>
-                            </div>
-                          </div>
-                        </div>
-  
-                        <div class="single_menu_item d-flex col-6 pl-0">
-                          <div class="single_menu_img">
-                            <img src="img/sarada.jpg" alt="">
-                          </div>
-  
-                          <div class="single_menu_name">
-                            <div>
-                              <h4 class="m-0">八景サラダ</h4>
-                              <p class="m-0">Hakkei Salada with Goma Dressing</p>
-                              <h5 class="m-0">Price THB 220.00</h5>
-                            </div>
-                          </div>
-                        </div>
-  
-                        <div class="single_menu_item d-flex col-6 pl-0">
-                          <div class="single_menu_img">
-                            <img src="img/sisoage.jpg" alt="">
-                          </div>
-  
-                          <div class="single_menu_name">
-                            <div>
-                              <h4 class="m-0">雲丹のしそ巻き天ぷら</h4>
-                              <p class="m-0">Sea Urchin Tempura with Shiso</p>
-                              <h5 class="m-0">Price THB 720.00</h5>
-                            </div>
-                          </div>
-                        </div>
-  
-                        <div class="single_menu_item d-flex col-6 pl-0">
-                          <div class="single_menu_img">
-                            <img src="img/egg.jpg" alt="">
-                          </div>
-  
-                          <div class="single_menu_name">
-                            <div>
-                              <h4 class="m-0">だし巻き</h4>
-                              <p class="m-0">Japanese Dashi Omlet</p>
-                              <h5 class="m-0">Price THB 240.00</h5>
-                            </div>
-                          </div>
-                        </div>
-  
-                        <div class="single_menu_item d-flex col-6 pl-0">
-                          <div class="single_menu_img">
-                            <img src="img/tempura.jpg" alt="">
-                          </div>
-  
-                          <div class="single_menu_name">
-                            <div>
-                              <h4 class="m-0">天ぷら6種盛り</h4>
-                              <p class="m-0">Assorted 6 Kinds of Tempura</p>
-                              <h5 class="m-0">Price THB 480.00</h5>
-                            </div>
-                          </div>
-                        </div>
-  
-                        <div class="single_menu_item d-flex col-6 pl-0">
-                          <div class="single_menu_img">
-                            <img src="img/karaage.jpg" alt="">
-                          </div>
-  
-                          <div class="single_menu_name">
-                            <div>
-                              <h4 class="m-0">八景からあげ</h4>
-                              <p class="m-0">Japanese Fried Chicken</p>
-                              <h5 class="m-0">Price THB 240.00</h5>
-                            </div>
-                          </div>
-                        </div>
-
-                      </div>
-                  </div>
+        <div class="col-md-6" data-aos="zoom-in-up">
+          <div class="card menu_item radius" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180" src="img/egg.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>だし巻き</title><rect width="100%" height="100%" fill="#868e96"/></img>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title menu_title"><span class="bg-light p-1 title_btn">だし巻き</span></h5>
+                  <p class="card-text english menu_padding">Japanese Dashi Omlet</p>
+                  <p class="card-text text-white mb-1 pl-1"><span class="bg-danger p-1 price_btn">Price</span></p>
+                  <p class="card-text menu_padding">THB 240.00</p>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-        </div>
-    </section>
-
-
-    <section>
-    <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="course_menu" id="course_menu">
-                <div class="course_menu_heading d-flex">
-                  <h3>コースメニュー</h3>
-                  <p class="lineheight pl-5">Course Menus</p>
-                </div>
-                <div class="course_menu_items d-flex flex-wrap">
-                  
-                  <div class="course_menu_item d-flex col-12 pl-0 menu_page">
-                    <div class="course_menu_img">
-                      <img src="img/nabe.jpg" alt="">
-                    </div>
-
-                    <div class="course_menu_name">
-                      <div>
-                        <h4 class="m-0">八景鶏味噌鍋コース</h4>
-                        <p class="m-0">Hakkei Chicken Miso Pot Course</p>
-                        <h5 class="m-0">Price THB 1,200.00</h5>
-                        <h6 class="mt-3 mb-1">コース内容</h6>
-                        <p class="m-0">
-                            1.〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜<br>
-                            2.〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜<br>
-                            3.〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜<br>
-                            4.〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜<br>
-                            5.〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜<br>
-                            6.〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜<br>
-                            7.〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜<br>    
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="course_menu_item d-flex col-12 pl-0 menu_page">
-                    <div class="course_menu_img">
-                      <img src="img/course_oden.jpg" alt="">
-                    </div>
-
-                    <div class="course_menu_name">
-                      <div>
-                        <h4 class="m-0">おでんコース</h4>
-                        <p class="m-0">Oden Course</p>
-                        <h5 class="m-0">Price THB 1,400.00</h5>
-                        <h6 class="mt-3 mb-1">コース内容</h6>
-                        <p class="m-0">
-                            1.〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜<br>
-                            2.〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜<br>
-                            3.〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜<br>
-                            4.〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜<br>
-                            5.〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜<br>
-                            6.〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜<br>
-                            7.〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜<br>    
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="course_menu_item d-flex col-12 pl-0 menu_page">
-                    <div class="course_menu_img">
-                      <img src="img/unityazuke.jpg" alt="">
-                    </div>
-
-                    <div class="course_menu_name">
-                      <div>
-                        <h4 class="m-0">雲丹コース</h4>
-                        <p class="m-0">Sea Urchin Course</p>
-                        <h5 class="m-0">Price THB 3,8000.00</h5>
-                        <h6 class="mt-3 mb-1">コース内容</h6>
-                        <p class="m-0">
-                            1.〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜<br>
-                            2.〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜<br>
-                            3.〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜<br>
-                            4.〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜<br>
-                            5.〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜<br>
-                            6.〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜<br>
-                            7.〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜<br>    
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="course_menu_item d-flex col-12 pl-0 menu_page">
-                    <div class="course_menu_img">
-                      <img src="img/course_hakkei.jpg" alt="">
-                    </div>
-
-                    <div class="course_menu_name">
-                      <div>
-                        <h4 class="m-0">八景コース</h4>
-                        <p class="m-0">Hakkei Course</p>
-                        <h5 class="m-0">Price THB 2,400.00</h5>
-                        <h6 class="mt-3 mb-1">コース内容</h6>
-                        <p class="m-0">
-                            1.〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜<br>
-                            2.〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜<br>
-                            3.〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜<br>
-                            4.〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜<br>
-                            5.〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜<br>
-                            6.〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜<br>
-                            7.〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜<br>    
-                        </p>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-             </div>
-        </div>
+      </div>
     </div>
+  </div>
+  
+  
+  <div class="container">
+    <div class="menu">
+      <div class="row">
+        <div class="col-md-6" data-aos="zoom-in-up">
+          <div class="card menu_item radius" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180" src="img/tempura.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>天ぷら6種盛り</title><rect width="100%" height="100%" fill="#868e96"/></img>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title menu_title"><span class="bg-light p-1 title_btn">天ぷら６種盛り</span></h5>
+                  <p class="card-text english menu_padding">Assorted 6 Kinds of Tempura</p>
+                  <p class="card-text text-white mb-1 pl-1"><span class="bg-danger p-1 price_btn">Price</span></p>
+                  <p class="card-text menu_padding">THB 480.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="zoom-in-up">
+          <div class="card menu_item radius" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180" src="img/karaage.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>八景からあげ</title><rect width="100%" height="100%" fill="#868e96"/></img>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title menu_title"><span class="bg-light p-1 title_btn">八景からあげ</span></h5>
+                  <p class="card-text english menu_padding">Japanese Fried Chicken</p>
+                  <p class="card-text text-white mb-1 pl-1"><span class="bg-danger p-1 price_btn">Price</span></p>
+                  <p class="card-text menu_padding">THB 240.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+  <div class="container">
+    <div class="menu">
+      <div class="row">
+        <div class="col-md-6" data-aos="zoom-in-up">
+          <div class="card menu_item radius" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180" src="img/nasu.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>茄子のおろし煮</title><rect width="100%" height="100%" fill="#868e96"/></img>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title menu_title"><span class="bg-light p-1 title_btn">茄子のおろし煮</span></h5>
+                  <p class="card-text english menu_padding">Stewed Eggplant</p>
+                  <p class="card-text text-white mb-1 pl-1"><span class="bg-danger p-1 price_btn">Price</span></p>
+                  <p class="card-text menu_padding">THB 200.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="zoom-in-up">
+          <div class="card menu_item radius" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180" src="img/sarada.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>八景サラダ</title><rect width="100%" height="100%" fill="#868e96"/></img>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title menu_title"><span class="bg-light p-1 title_btn">八景サラダ</span></h5>
+                  <p class="card-text english menu_padding">Hakkei Salada</p>
+                  <p class="card-text text-white mb-1 pl-1"><span class="bg-danger p-1 price_btn">Price</span></p>
+                  <p class="card-text menu_padding">THB 220.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="container">
+    <div class="menu">
+      <div class="row">
+        <div class="col-md-6" data-aos="zoom-in-up">
+          <div class="card menu_item radius" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180" src="img/sisoage.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>雲丹のしそ巻き天ぷら</title><rect width="100%" height="100%" fill="#868e96"/></img>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title menu_title"><span class="bg-light p-1 title_btn">雲丹のしそ巻き天ぷら</span></h5>
+                  <p class="card-text english menu_padding">Sea Urchin Tempura with Shiso</p>
+                  <p class="card-text text-white mb-1 pl-1"><span class="bg-danger p-1 price_btn">Price</span></p>
+                  <p class="card-text menu_padding">THB 720.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="zoom-in-up">
+          <div class="card menu_item radius" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180" src="img/egg.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>だし巻き</title><rect width="100%" height="100%" fill="#868e96"/></img>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title menu_title"><span class="bg-light p-1 title_btn">だし巻き</span></h5>
+                  <p class="card-text english menu_padding">Japanese Dashi Omlet</p>
+                  <p class="card-text text-white mb-1 pl-1"><span class="bg-danger p-1 price_btn">Price</span></p>
+                  <p class="card-text menu_padding">THB 240.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="container">
+    <div class="menu">
+      <div class="row">
+        <div class="col-md-6" data-aos="zoom-in-up">
+          <div class="card menu_item radius" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180" src="img/tempura.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>天ぷら6種盛り</title><rect width="100%" height="100%" fill="#868e96"/></img>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title menu_title"><span class="bg-light p-1 title_btn">天ぷら６種盛り</span></h5>
+                  <p class="card-text english menu_padding">Assorted 6 Kinds of Tempura</p>
+                  <p class="card-text text-white mb-1 pl-1"><span class="bg-danger p-1 price_btn">Price</span></p>
+                  <p class="card-text menu_padding">THB 480.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="zoom-in-up">
+          <div class="card menu_item radius" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180" src="img/karaage.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>八景からあげ</title><rect width="100%" height="100%" fill="#868e96"/></img>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title menu_title"><span class="bg-light p-1 title_btn">八景からあげ</span></h5>
+                  <p class="card-text english menu_padding">Japanese Fried Chicken</p>
+                  <p class="card-text text-white mb-1 pl-1"><span class="bg-danger p-1 price_btn">Price</span></p>
+                  <p class="card-text menu_padding">THB 240.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+
+
+  <!-- コースメニュー -->
+<section>
+  <div class="container">
+    <div class="row heading" data-aos="flip-left">
+      <div class="col-md-12">
+        <div class="d-flex justify-content-between">
+          <h3 id="course_menu">コースメニュー<span class="english">(Course Menus)</span></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="container" data-aos="fade-left">
+    <div class="menu course_menu">
+      <div class="card mb-3 menu_item radius" style="max-width: 760px;">
+        <div class="row no-gutters">
+          <div class="col-md-5">
+            <img class="bd-placeholder-img" width="100%" height="100%" src="/img/nabe.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><rect width="100%" height="100%" fill="#868e96"/></img>
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h5 class="card-title menu_title"><span class="bg-light p-1 title_btn">八景味噌鍋コース</span></h5>
+                  <p class="card-text english menu_padding">Hakkei Chicken Miso Pot Course</p>
+                  <p class="menu_padding mb-2">コース内容(Course contents)</p>
+                  <div class="course_content">
+                    <p class="menu_padding">1.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+                    <p class="menu_padding">2.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+                    <p class="menu_padding">3.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+                    <p class="menu_padding">4.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+                    <p class="menu_padding">5.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+                    <p class="menu_padding">6.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+                    <p class="menu_padding">7.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+                  </div>
+                  <p class="card-text mb-1 pl-1 mt-4"><span class="text-white bg-danger p-1 price_btn mr-2">Price</span>THB 1,200.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" data-aos="fade-left">
+    <div class="menu course_menu">
+      <div class="card mb-3 menu_item radius" style="max-width: 760px;">
+        <div class="row no-gutters">
+          <div class="col-md-5">
+            <img class="bd-placeholder-img" width="100%" height="100%" src="/img/course_oden.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><rect width="100%" height="100%" fill="#868e96"/></img>
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h5 class="card-title menu_title"><span class="bg-light p-1 title_btn">おでんコース</span></h5>
+                  <p class="card-text english menu_padding">Oden Course</p>
+                  <p class="menu_padding mb-2">コース内容(Course contents)</p>
+                  <div class="course_content">
+                    <p class="menu_padding">1.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+                    <p class="menu_padding">2.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+                    <p class="menu_padding">3.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+                    <p class="menu_padding">4.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+                    <p class="menu_padding">5.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+                    <p class="menu_padding">6.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+                    <p class="menu_padding">7.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+                  </div>
+                  <p class="card-text mb-1 pl-1 mt-4"><span class="text-white bg-danger p-1 price_btn mr-2">Price</span>THB 1,400.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" data-aos="fade-left">
+    <div class="menu course_menu">
+      <div class="card mb-3 menu_item radius" style="max-width: 760px;">
+        <div class="row no-gutters">
+          <div class="col-md-5">
+            <img class="bd-placeholder-img" width="100%" height="100%" src="/img/unityazuke.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><rect width="100%" height="100%" fill="#868e96"/></img>
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h5 class="card-title menu_title"><span class="bg-light p-1 title_btn">雲丹コース</span></h5>
+                  <p class="card-text english menu_padding">Sea Urchin Course</p>
+                  <p class="menu_padding mb-2">コース内容(Course contents)</p>
+                  <div class="course_content">
+                    <p class="menu_padding">1.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+                    <p class="menu_padding">2.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+                    <p class="menu_padding">3.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+                    <p class="menu_padding">4.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+                    <p class="menu_padding">5.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+                    <p class="menu_padding">6.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+                    <p class="menu_padding">7.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+                  </div>
+                  <p class="card-text mb-1 pl-1 mt-4"><span class="text-white bg-danger p-1 price_btn mr-2">Price</span>THB 3,800.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" data-aos="fade-left">
+    <div class="menu course_menu">
+      <div class="card mb-3 menu_item radius" style="max-width: 760px;">
+        <div class="row no-gutters">
+          <div class="col-md-5">
+            <img class="bd-placeholder-img" width="100%" height="100%" src="/img/course_hakkei.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><rect width="100%" height="100%" fill="#868e96"/></img>
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h5 class="card-title menu_title"><span class="bg-light p-1 title_btn">八景コース</span></h5>
+                  <p class="card-text english menu_padding">Hakkei Course</p>
+                  <p class="menu_padding mb-2">コース内容(Course contents)</p>
+                  <div class="course_content">
+                    <p class="menu_padding">1.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+                    <p class="menu_padding">2.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+                    <p class="menu_padding">3.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+                    <p class="menu_padding">4.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+                    <p class="menu_padding">5.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+                    <p class="menu_padding">6.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+                    <p class="menu_padding">7.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+                  </div>
+                  <p class="card-text mb-1 pl-1 mt-4"><span class="text-white bg-danger p-1 price_btn mr-2">Price</span>THB 2,400.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
  
 
 
+  <!-- おでんメニュー -->
 <section>
-    <div class="container">
+  <div class="container">
+    <div class="row heading" data-aos="flip-left">
+      <div class="col-md-12">
+        <div class="d-flex justify-content-between">
+          <h3 id="oden_menu">おでんメニュー<span class="english">(Oden Menus)</span></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="container">
+    <div class="menu">
       <div class="row">
-        <div class="col-md-12">
-          <div class="oden_menu" id="oden_menu">
-            <div class="oden_menu_heading d-flex">
-              <h3>おでんメニュー</h3>
-              <p class="lineheight pl-5">Oden Menus</p>
-            </div>
-            <div class="oden_menu_items d-flex flex-wrap">
-              
-              <div class="oden_menu_item d-flex col-6 pl-0">
-                <div class="oden_menu_img">
-                  <img src="img/oden_egg.jpg" alt="">
-                </div>
-
-                <div class="oden_menu_name">
-                  <div>
-                    <h4 class="m-0">たまご</h4>
-                    <p class="m-0">Boiled Egg</p>
-                    <h5 class="m-0">Price THB 80.00</h5>
-                  </div>
-                </div>
+        <div class="col-md-6" data-aos="zoom-in-up">
+          <div class="card menu_item radius" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180" src="/img/oden_egg.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>たまご</title><rect width="100%" height="100%" fill="#868e96"/></img>
               </div>
-              <div class="oden_menu_item d-flex col-6 pl-0">
-                <div class="oden_menu_img">
-                  <img src="img/nikomi.jpg" alt="">
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title menu_title"><span class="bg-light p-1 title_btn">たまご</span></h5>
+                  <p class="card-text english menu_padding">Boiled Egg</p>
+                  <p class="card-text text-white mb-1 pl-1"><span class="bg-danger p-1 price_btn">Price</span></p>
+                  <p class="card-text menu_padding">THB 80.00</p>
                 </div>
-
-                <div class="oden_menu_name">
-                  <div>
-                    <h4 class="m-0">牛すじ</h4>
-                    <p class="m-0">Beef Tendon</p>
-                    <h5 class="m-0">Price THB 140.00</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="oden_menu_item d-flex col-6 pl-0">
-                <div class="oden_menu_img">
-                  <img src="img/nikumaki.jpg" alt="">
-                </div>
-
-                <div class="oden_menu_name">
-                  <div>
-                    <h4 class="m-0">ロールキャベツ</h4>
-                    <p class="m-0">Roll cabbage</p>
-                    <h5 class="m-0">Price THB 110.00</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="oden_menu_item d-flex col-6 pl-0">
-                <div class="oden_menu_img">
-                  <img src="img/tomato.jpg" alt="">
-                </div>
-
-                <div class="oden_menu_name">
-                  <div>
-                    <h4 class="m-0">トマト</h4>
-                    <p class="m-0">Tomato</p>
-                    <h5 class="m-0">Price THB 110.00</h5>
-                  </div>
-                </div>
-
               </div>
             </div>
-
-            <div class="oden_menu_items d-flex flex-wrap">
-              
-                <div class="oden_menu_item d-flex col-6 pl-0">
-                  <div class="oden_menu_img">
-                    <img src="img/oden_egg.jpg" alt="">
-                  </div>
-  
-                  <div class="oden_menu_name">
-                    <div>
-                      <h4 class="m-0">たまご</h4>
-                      <p class="m-0">Boiled Egg</p>
-                      <h5 class="m-0">Price THB 80.00</h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="oden_menu_item d-flex col-6 pl-0">
-                  <div class="oden_menu_img">
-                    <img src="img/nikomi.jpg" alt="">
-                  </div>
-  
-                  <div class="oden_menu_name">
-                    <div>
-                      <h4 class="m-0">牛すじ</h4>
-                      <p class="m-0">Beef Tendon</p>
-                      <h5 class="m-0">Price THB 140.00</h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="oden_menu_item d-flex col-6 pl-0">
-                  <div class="oden_menu_img">
-                    <img src="img/nikumaki.jpg" alt="">
-                  </div>
-  
-                  <div class="oden_menu_name">
-                    <div>
-                      <h4 class="m-0">ロールキャベツ</h4>
-                      <p class="m-0">Roll cabbage</p>
-                      <h5 class="m-0">Price THB 110.00</h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="oden_menu_item d-flex col-6 pl-0">
-                  <div class="oden_menu_img">
-                    <img src="img/tomato.jpg" alt="">
-                  </div>
-  
-                  <div class="oden_menu_name">
-                    <div>
-                      <h4 class="m-0">トマト</h4>
-                      <p class="m-0">Tomato</p>
-                      <h5 class="m-0">Price THB 110.00</h5>
-                    </div>
-                  </div>
-                  
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="zoom-in-up">
+          <div class="card menu_item radius" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180" src="/img/nikomi.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>牛すじ</title><rect width="100%" height="100%" fill="#868e96"/></img>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title menu_title"><span class="bg-light p-1 title_btn">牛すじ</span></h5>
+                  <p class="card-text english menu_padding">Beef Tendon</p>
+                  <p class="card-text text-white mb-1 pl-1"><span class="bg-danger p-1 price_btn">Price</span></p>
+                  <p class="card-text menu_padding">THB 1,400.00</p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </div>
 
-              <div class="oden_menu_items d-flex flex-wrap">
-              
-                <div class="oden_menu_item d-flex col-6 pl-0">
-                  <div class="oden_menu_img">
-                    <img src="img/oden_egg.jpg" alt="">
-                  </div>
-  
-                  <div class="oden_menu_name">
-                    <div>
-                      <h4 class="m-0">たまご</h4>
-                      <p class="m-0">Boiled Egg</p>
-                      <h5 class="m-0">Price THB 80.00</h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="oden_menu_item d-flex col-6 pl-0">
-                  <div class="oden_menu_img">
-                    <img src="img/nikomi.jpg" alt="">
-                  </div>
-  
-                  <div class="oden_menu_name">
-                    <div>
-                      <h4 class="m-0">牛すじ</h4>
-                      <p class="m-0">Beef Tendon</p>
-                      <h5 class="m-0">Price THB 140.00</h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="oden_menu_item d-flex col-6 pl-0">
-                  <div class="oden_menu_img">
-                    <img src="img/nikumaki.jpg" alt="">
-                  </div>
-  
-                  <div class="oden_menu_name">
-                    <div>
-                      <h4 class="m-0">ロールキャベツ</h4>
-                      <p class="m-0">Roll cabbage</p>
-                      <h5 class="m-0">Price THB 110.00</h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="oden_menu_item d-flex col-6 pl-0">
-                  <div class="oden_menu_img">
-                    <img src="img/tomato.jpg" alt="">
-                  </div>
-  
-                  <div class="oden_menu_name">
-                    <div>
-                      <h4 class="m-0">トマト</h4>
-                      <p class="m-0">Tomato</p>
-                      <h5 class="m-0">Price THB 110.00</h5>
-                    </div>
-                  </div>
-                  
+
+  <div class="container">
+    <div class="menu">
+      <div class="row">
+        <div class="col-md-6" data-aos="zoom-in-up">
+          <div class="card menu_item radius" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180" src="/img/nikumaki.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>ロールキャベツ</title><rect width="100%" height="100%" fill="#868e96"/></img>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title menu_title"><span class="bg-light p-1 title_btn">ロールキャベツ</span></h5>
+                  <p class="card-text english menu_padding">Roll cabbage</p>
+                  <p class="card-text text-white  mb-1"><span class="bg-danger p-1 price_btn">Price</span></p>
+                  <p class="card-text menu_padding">THB 110.00</p>
                 </div>
               </div>
-
-              <div class="oden_menu_items d-flex flex-wrap mb-5">
-              
-                <div class="oden_menu_item d-flex col-6 pl-0">
-                  <div class="oden_menu_img">
-                    <img src="img/oden_egg.jpg" alt="">
-                  </div>
-  
-                  <div class="oden_menu_name">
-                    <div>
-                      <h4 class="m-0">たまご</h4>
-                      <p class="m-0">Boiled Egg</p>
-                      <h5 class="m-0">Price THB 80.00</h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="oden_menu_item d-flex col-6 pl-0">
-                  <div class="oden_menu_img">
-                    <img src="img/nikomi.jpg" alt="">
-                  </div>
-  
-                  <div class="oden_menu_name">
-                    <div>
-                      <h4 class="m-0">牛すじ</h4>
-                      <p class="m-0">Beef Tendon</p>
-                      <h5 class="m-0">Price THB 140.00</h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="oden_menu_item d-flex col-6 pl-0">
-                  <div class="oden_menu_img">
-                    <img src="img/nikumaki.jpg" alt="">
-                  </div>
-  
-                  <div class="oden_menu_name">
-                    <div>
-                      <h4 class="m-0">ロールキャベツ</h4>
-                      <p class="m-0">Roll cabbage</p>
-                      <h5 class="m-0">Price THB 110.00</h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="oden_menu_item d-flex col-6 pl-0">
-                  <div class="oden_menu_img">
-                    <img src="img/tomato.jpg" alt="">
-                  </div>
-  
-                  <div class="oden_menu_name">
-                    <div>
-                      <h4 class="m-0">トマト</h4>
-                      <p class="m-0">Tomato</p>
-                      <h5 class="m-0">Price THB 110.00</h5>
-                    </div>
-                  </div>
-                  
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="zoom-in-up">
+          <div class="card menu_item radius" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180" src="/img/tomato.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>トマト</title><rect width="100%" height="100%" fill="#868e96"/></img>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title menu_title"><span class="bg-light p-1 title_btn">トマト</span></h5>
+                  <p class="card-text english menu_padding">Tomato</p>
+                  <p class="card-text text-white mb-1 pl-1"><span class="bg-danger p-1 price_btn">Price</span></p>
+                  <p class="card-text menu_padding">THB 110.00</p>
                 </div>
               </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-
-
-
-
-
-                          
-      <section>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="footer">
-                  <div class="footer_top d-flex">
-                    <div class="col-2">
-                      <div class="footer_item logo">
-                        <img  class="logo" src="img/hakkei_logo.jpg" alt="">
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="footer_item reservation d-flex">
-                        <div>
-                          <a class="btn btn-success footer_btn" href="#" role="button">Reservation</a>
-                        </div>
-                        <div class="business_hour">
-                          <h5>Opening hour</h5>
-                          <p class="text-white m-0">Open Tue.-Sun. five pm to ten thirty pm. </p>
-                          <p class="text-white m-0">Sun. are closed</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-5 footer_contact_form_box d-flex">
-
-                      <div class="footer_contact col-7">
-                        <h5>CONTACT</h5>
-                        <div class="contact_items">
-                          <div class="contact_item d-flex">
-                            <img src="img/フリーアイコン/スタンダードな家アイコン.png" alt="">
-                            <p>267/16 Soi63 Sukhumvit
-                              Klonton-Nua, Vadhana
-                              Bangkok 10110</p>
-                          </div>
-                          <div class="contact_item d-flex">
-                            <img src="img/フリーアイコン/iPhone風のスマートフォンのアイコン素材.png" alt="">
-                            <p>02 003 9325</p>
-                          </div>
-                          <div class="contact_item d-flex">
-                            <img src="img/フリーアイコン/メールの無料アイコン.png" alt="">
-                            <p>info@domain.com</p>
-                          </div>
-                        </div>
-                      </div>
-                      
-                      <div class="col-5 footer_form_box">
-                        
-                        <div class="footer_form">
-                        <h5>KEEP IN TOUCH</h5>
-                        <form class="form-inline">
-                          <input class="form-control mr-sm-2" type="search" placeholder="e-mail" aria-label="Search">
-                          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">></button>
-                        </form>
-                        </div>
-                      
-                        <div class="sns">
-                          <h5 class="text-white">Follow Us</h5>
-                          <div class="sns_icon d-flex">
-                            <div>
-                              <img src="img/フリーアイコン/facebook.png" alt="">
-                            </div>
-                            <div>
-                              <img src="img/フリーアイコン/instagram.png" alt="">
-                            </div>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-                   </div>
-                   
-                   <div class="footer_bottom d-flex text-white">
-                     <p>Teams and conditions</p>
-                     <p class="border_">Privacy</p>
-                     <p>©Hakkei</p>
-
-                   </div>
-                  </div>
+  </div>
+  <div class="container">
+    <div class="menu">
+      <div class="row">
+        <div class="col-md-6" data-aos="zoom-in-up">
+          <div class="card menu_item radius" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180" src="/img/oden_egg.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>たまご</title><rect width="100%" height="100%" fill="#868e96"/></img>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title menu_title"><span class="bg-light p-1 title_btn">たまご</span></h5>
+                  <p class="card-text english menu_padding">Boiled Egg</p>
+                  <p class="card-text text-white mb-1 pl-1"><span class="bg-danger p-1 price_btn">Price</span></p>
+                  <p class="card-text menu_padding">THB 80.00</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section>    
+        <div class="col-md-6" data-aos="zoom-in-up">
+          <div class="card menu_item radius" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180" src="/img/nikomi.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>牛すじ</title><rect width="100%" height="100%" fill="#868e96"/></img>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title menu_title"><span class="bg-light p-1 title_btn">牛すじ</span></h5>
+                  <p class="card-text english menu_padding">Beef Tendon</p>
+                  <p class="card-text text-white mb-1 pl-1"><span class="bg-danger p-1 price_btn">Price</span></p>
+                  <p class="card-text menu_padding">THB 1,400.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="menu">
+      <div class="row">
+        <div class="col-md-6" data-aos="zoom-in-up">
+          <div class="card menu_item radius" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180" src="/img/nikumaki.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>ロールキャベツ</title><rect width="100%" height="100%" fill="#868e96"/></img>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title menu_title"><span class="bg-light p-1 title_btn">ロールキャベツ</span></h5>
+                  <p class="card-text english menu_padding">Roll cabbage</p>
+                  <p class="card-text text-white  mb-1"><span class="bg-danger p-1 price_btn">Price</span></p>
+                  <p class="card-text menu_padding">THB 110.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="zoom-in-up">
+          <div class="card menu_item radius" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180" src="/img/tomato.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>トマト</title><rect width="100%" height="100%" fill="#868e96"/></img>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title menu_title"><span class="bg-light p-1 title_btn">トマト</span></h5>
+                  <p class="card-text english menu_padding">Tomato</p>
+                  <p class="card-text text-white mb-1 pl-1"><span class="bg-danger p-1 price_btn">Price</span></p>
+                  <p class="card-text menu_padding">THB 110.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="menu">
+      <div class="row">
+        <div class="col-md-6" data-aos="zoom-in-up">
+          <div class="card menu_item radius" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180" src="/img/oden_egg.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>たまご</title><rect width="100%" height="100%" fill="#868e96"/></img>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title menu_title"><span class="bg-light p-1 title_btn">たまご</span></h5>
+                  <p class="card-text english menu_padding">Boiled Egg</p>
+                  <p class="card-text text-white mb-1 pl-1"><span class="bg-danger p-1 price_btn">Price</span></p>
+                  <p class="card-text menu_padding">THB 80.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="zoom-in-up">
+          <div class="card menu_item radius" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180" src="/img/nikomi.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>牛すじ</title><rect width="100%" height="100%" fill="#868e96"/></img>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title menu_title"><span class="bg-light p-1 title_btn">牛すじ</span></h5>
+                  <p class="card-text english menu_padding">Beef Tendon</p>
+                  <p class="card-text text-white mb-1 pl-1"><span class="bg-danger p-1 price_btn">Price</span></p>
+                  <p class="card-text menu_padding">THB 1,400.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="menu">
+      <div class="row">
+        <div class="col-md-6" data-aos="zoom-in-up">
+          <div class="card menu_item radius" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180" src="/img/nikumaki.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>ロールキャベツ</title><rect width="100%" height="100%" fill="#868e96"/></img>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title menu_title"><span class="bg-light p-1 title_btn">ロールキャベツ</span></h5>
+                  <p class="card-text english menu_padding">Roll cabbage</p>
+                  <p class="card-text text-white  mb-1"><span class="bg-danger p-1 price_btn">Price</span></p>
+                  <p class="card-text menu_padding">THB 110.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="zoom-in-up">
+          <div class="card menu_item radius" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180" src="/img/tomato.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>トマト</title><rect width="100%" height="100%" fill="#868e96"/></img>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title menu_title"><span class="bg-light p-1 title_btn">トマト</span></h5>
+                  <p class="card-text english menu_padding">Tomato</p>
+                  <p class="card-text text-white mb-1 pl-1"><span class="bg-danger p-1 price_btn">Price</span></p>
+                  <p class="card-text menu_padding">THB 110.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="menu">
+      <div class="row">
+        <div class="col-md-6" data-aos="zoom-in-up">
+          <div class="card menu_item radius" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180" src="/img/oden_egg.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>たまご</title><rect width="100%" height="100%" fill="#868e96"/></img>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title menu_title"><span class="bg-light p-1 title_btn">たまご</span></h5>
+                  <p class="card-text english menu_padding">Boiled Egg</p>
+                  <p class="card-text text-white mb-1 pl-1"><span class="bg-danger p-1 price_btn">Price</span></p>
+                  <p class="card-text menu_padding">THB 80.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="zoom-in-up">
+          <div class="card menu_item radius" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180" src="/img/nikomi.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>牛すじ</title><rect width="100%" height="100%" fill="#868e96"/></img>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title menu_title"><span class="bg-light p-1 title_btn">牛すじ</span></h5>
+                  <p class="card-text english menu_padding">Beef Tendon</p>
+                  <p class="card-text text-white mb-1 pl-1"><span class="bg-danger p-1 price_btn">Price</span></p>
+                  <p class="card-text menu_padding">THB 1,400.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="menu">
+      <div class="row">
+        <div class="col-md-6" data-aos="zoom-in-up">
+          <div class="card menu_item radius" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180" src="/img/nikumaki.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>ロールキャベツ</title><rect width="100%" height="100%" fill="#868e96"/></img>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title menu_title"><span class="bg-light p-1 title_btn">ロールキャベツ</span></h5>
+                  <p class="card-text english menu_padding">Roll cabbage</p>
+                  <p class="card-text text-white  mb-1"><span class="bg-danger p-1 price_btn">Price</span></p>
+                  <p class="card-text menu_padding">THB 110.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="zoom-in-up">
+          <div class="card menu_item radius" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180" src="/img/tomato.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>トマト</title><rect width="100%" height="100%" fill="#868e96"/></img>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title menu_title"><span class="bg-light p-1 title_btn">トマト</span></h5>
+                  <p class="card-text english menu_padding">Tomato</p>
+                  <p class="card-text text-white mb-1 pl-1"><span class="bg-danger p-1 price_btn">Price</span></p>
+                  <p class="card-text menu_padding">THB 110.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="menu">
+      <div class="row">
+        <div class="col-md-6" data-aos="zoom-in-up">
+          <div class="card menu_item radius" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180" src="/img/oden_egg.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>たまご</title><rect width="100%" height="100%" fill="#868e96"/></img>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title menu_title"><span class="bg-light p-1 title_btn">たまご</span></h5>
+                  <p class="card-text english menu_padding">Boiled Egg</p>
+                  <p class="card-text text-white mb-1 pl-1"><span class="bg-danger p-1 price_btn">Price</span></p>
+                  <p class="card-text menu_padding">THB 80.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="zoom-in-up">
+          <div class="card menu_item radius" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180" src="/img/nikomi.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>牛すじ</title><rect width="100%" height="100%" fill="#868e96"/></img>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title menu_title"><span class="bg-light p-1 title_btn">牛すじ</span></h5>
+                  <p class="card-text english menu_padding">Beef Tendon</p>
+                  <p class="card-text text-white mb-1 pl-1"><span class="bg-danger p-1 price_btn">Price</span></p>
+                  <p class="card-text menu_padding">THB 1,400.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="menu">
+      <div class="row">
+        <div class="col-md-6" data-aos="zoom-in-up">
+          <div class="card menu_item radius" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180" src="/img/nikumaki.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>ロールキャベツ</title><rect width="100%" height="100%" fill="#868e96"/></img>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title menu_title"><span class="bg-light p-1 title_btn">ロールキャベツ</span></h5>
+                  <p class="card-text english menu_padding">Roll cabbage</p>
+                  <p class="card-text text-white  mb-1"><span class="bg-danger p-1 price_btn">Price</span></p>
+                  <p class="card-text menu_padding">THB 110.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="zoom-in-up">
+          <div class="card menu_item radius" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180" src="/img/tomato.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>トマト</title><rect width="100%" height="100%" fill="#868e96"/></img>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title menu_title"><span class="bg-light p-1 title_btn">トマト</span></h5>
+                  <p class="card-text english menu_padding">Tomato</p>
+                  <p class="card-text text-white mb-1 pl-1"><span class="bg-danger p-1 price_btn">Price</span></p>
+                  <p class="card-text menu_padding">THB 110.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+
+
 
   
 
+ 
+
+
+
+
+
+
+
+<!-- フッター -->
+<section>
+  <div class="container">
+    <div class="footer">
+      <div class="footer_top">
+        <div class="row">
+          <div class="col-md-2 align logo text-center d-flex ml-3 mb-3">
+            <div><img src="/img/hakkei_logo.jpg" alt=""></div>
+          </div>
+  
+          <div class="col-md-4 align d-flex mb-3">
+            <div class="ml-3">
+              <a class="btn btn-success footer_btn w-100" href="#" role="button">Reservation</a>
+              <div class="business_hour mt-2">
+                <h5 class="text-white border-bottom pb-1">Opening hour</h5>
+                <p class="m-0">Open Tue.-Sun. five pm to ten thirty pm. </p>
+                <p class="m-0">Sun. are closed</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-3 align icon d-flex mb-3 ml-3">
+            <div class="footer_right">
+              <p class="text-white m-0">CONTACT</p>
+              <div class="d-flex adress mt-2">
+                <div><img src="/img/フリーアイコン/スタンダードな家アイコン.png" alt=""></div>
+                <p class="m-0">267/16 Soi63 Sukhumvit
+                  Klonton-Nua, Vadhana
+                  Bangkok 10110</p>
+              </div>
     
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+              <div class="d-flex mt-3">
+                <div><img src="/img/フリーアイコン/iPhone風のスマートフォンのアイコン素材.png" alt=""></div>
+                <p class="m-0">02 003 9325</p>
+              </div>
+    
+              <div class="d-flex mt-3">
+                <div><img src="/img/フリーアイコン/メールの無料アイコン.png" alt=""></div>
+                <p class="m-0">info@domain.com</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-2 icon mb-3 ml-3">
+            <div class="footer_right">
+              <p class="text-white m-0">FOLLOW US</p>
+              <div class="d-flex mt-2">
+                <div><img src="/img/フリーアイコン/instagram.png" alt=""></div>
+                <div><img src="/img/フリーアイコン/facebook.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer_bottom">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">Teams and conditions</li>
+            <li class="breadcrumb-item">Privacy</li>
+            <li class="breadcrumb-item">©Hakkei</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v9.0" nonce="lYL4MRak"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({
+  duration: 1000,
+});</script>
 </body>
 </html>
